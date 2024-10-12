@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git 'https://github.com/rajpalsinghsaini/testingjenkinsrepo.git'
+                git branch: 'main', url: 'https://github.com/rajpalsinghsaini/testingjenkinsrepo.git'
                 echo "Pull Success"
             }
         }
