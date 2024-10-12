@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh '/root/maven/mvn clean package'
+                sh '/root/maven/bin/mvn clean package'
                 echo "Build Success"
             }
         }
