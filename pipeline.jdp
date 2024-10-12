@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/Pritam-Khergade/student-ui.git'
+                git 'https://github.com/Pritam-Khergade/student-ui.git'
                 echo "Pull Success"
             }
         }
