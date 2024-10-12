@@ -1,11 +1,13 @@
 
+// Declarative Pipiline
 
 pipeline {
     agent any
     stages {
         stage('Pull') {
             steps {
-               echo "Pull Success"
+                git 'https://github.com/Pritam-Khergade/student-ui.git'
+                echo "Pull Success"
             }
         }
         stage('Build') {
